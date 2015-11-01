@@ -20,7 +20,7 @@ function calculatorModule () {
 
     load: function (x) {
       if (typeof x != "number"){
-        return "Please enter a number";
+        throw new Error("Please enter a number");
       }
       total = x;
       return total;
@@ -42,7 +42,7 @@ function calculatorModule () {
 
     add: function (y) {
       if (typeof y != "number"){
-        return "Please enter a number";
+        throw new Error("Please enter a number");
       }
       total += y;
     },
@@ -54,7 +54,7 @@ function calculatorModule () {
 
     subtract: function (q) {
       if (typeof q != "number"){
-        return "Please enter a number";
+        throw new Error("Please enter a number");
       }
       total -= q;
     },
@@ -66,7 +66,7 @@ function calculatorModule () {
 
     multiply: function (w) {
       if (typeof w != "number"){
-        return "Please enter a number";
+        throw new Error("Please enter a number");
       }
       total *= w;
     },
@@ -78,7 +78,7 @@ function calculatorModule () {
 
     divide: function (e) {
       if (typeof e != "number"){
-        return "Please enter a number";
+        throw new Error("Please enter a number");
       }
       total /= e;
     },
